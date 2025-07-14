@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Inmueble</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        header, footer { background-color: #0d1b2a; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { height: 50px; }
+        .hero { background-image: url('https://source.unsplash.com/featured/?house'); background-size: cover; height: 80vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; padding: 20px; }
+        .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .hero p { font-size: 1.2em; }
+        .hero a { background-color: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; }
+        .social-icons a { margin: 0 10px; color: white; text-decoration: none; font-size: 1.5em; }
+        .contact { padding: 30px; background-color: #f4f4f4; }
+        .contact form { max-width: 600px; margin: auto; display: flex; flex-direction: column; }
+        .contact label { margin-top: 10px; }
+        .contact input, .contact textarea { padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+        .contact button { margin-top: 15px; padding: 10px; background-color: #0d1b2a; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="LOGO.jpg" alt="Team Inmueble Logo" class="logo">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/teaminmueble" target="_blank">📸</a>
+            <a href="https://www.facebook.com/profile.php?id=61557124034339" target="_blank">📘</a>
+            <a href="https://www.tiktok.com/@teaminmueble" target="_blank">🎵</a>
+            <a href="https://www.youtube.com/channel/UCafaA1IRo8sIr0sKwufqKmw" target="_blank">▶️</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Tu nuevo hogar, tu mejor decisión</h1>
+            <p>Vive estilo resort desde $1,700 al mes en Ocala, Winter Garden y más. Compra, renta o invierte con nosotros.</p>
+            <a href="https://wa.me/" target="_blank">Escríbenos por WhatsApp</a>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Formulario de contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Team Inmueble</p>
+    </footer>
+</body>
+</html>
