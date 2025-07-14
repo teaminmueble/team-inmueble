@@ -1,0 +1,57 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+.hero {
+  background: url('https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.hero-content {
+  background-color: rgba(0,0,0,0.6);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #22c55e;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+.services, .testimonials, .gallery, .video, .contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.service, .testimonial {
+  margin: 2rem 0;
+}
+.gallery .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.gallery .images img {
+  width: 300px;
+  border-radius: 0.5rem;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
