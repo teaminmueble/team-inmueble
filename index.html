@@ -1,42 +1,12 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Team Inmueble</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="logo.png" />
-</head>
-<body>
-  <header class="header">
-    <img src="logo.png" alt="Logo Team Inmueble" class="logo" />
-    <nav class="socials">
-      <a href="https://www.instagram.com/teaminmueble" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" /></a>
-      <a href="https://www.facebook.com/profile.php?id=61557124034339" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" /></a>
-      <a href="https://www.tiktok.com/@teaminmueble" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" /></a>
-      <a href="https://www.youtube.com/channel/UCafaA1IRo8sIr0sKwufqKmw" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" /></a>
-    </nav>
-  </header>
+<form action="https://formspree.io/f/xdkdoznr" method="POST">
+  <label for="name">Tu nombre:</label><br>
+  <input type="text" name="name" required><br><br>
 
-  <section class="hero">
-    <h1>Tu nuevo hogar te espera</h1>
-    <p>Renta apartamentos en Winter Garden u Osceola con <strong>2 meses GRATIS</strong>. Aplicación fácil, cerca de los <strong>mejores colegios</strong>, <strong>Disney</strong>, <strong>International Drive</strong> y con <strong>amenidades estilo resort</strong>.</p>
-    <a href="https://wa.me/17542468627" class="whatsapp-btn" target="_blank">Contáctanos por WhatsApp</a>
-  </section>
+  <label for="email">Tu email:</label><br>
+  <input type="email" name="email" required><br><br>
 
-  <section class="formulario">
-    <h2>Formulario de contacto</h2>
-    <form action="mailto:teaminmueble@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="Nombre" placeholder="Tu nombre" required />
-      <input type="email" name="Email" placeholder="Tu email" required />
-      <textarea name="Mensaje" placeholder="Escribe tu mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+  <label for="message">Escribe tu mensaje:</label><br>
+  <textarea name="message" rows="4" required></textarea><br><br>
 
-  <footer>
-    <p>&copy; 2025 Team Inmueble. Todos los derechos reservados.</p>
-    <p>Accesos a propiedades: <em>Próximamente</em></p>
-  </footer>
-</body>
-</html>
+  <button type="submit">Enviar</button>
+</form>
