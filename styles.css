@@ -99,3 +99,35 @@ body {
 .contact-form button:hover {
   background: #3e8e41;
 }
+.services {
+  text-align: center;
+  padding: 2em;
+}
+
+.services h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  color: #eee;
+}
+
+.socials img {
+  width: 36px;
+  margin: 0 10px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.socials img:hover {
+  transform: scale(1.3);
+}
