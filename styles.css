@@ -1,117 +1,126 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
-  background: #1e1e1e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1a;
   color: white;
 }
 
+/* Encabezado */
 .header {
-  text-align: center;
-  padding: 2rem 1rem 1rem 1rem;
-  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #111;
 }
 
-.header h1 {
-  font-size: 3rem;
-  margin: 0;
+.site-title {
+  font-size: 36px;
+  font-weight: bold;
   color: #00ffcc;
-  text-shadow: 2px 2px 4px black;
 }
 
+.socials img {
+  width: 30px;
+  margin-left: 15px;
+  transition: transform 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+/* Hero */
 .hero {
-  background: url('resort.jpg') center/cover no-repeat;
-  padding: 5rem 2rem;
-  color: white;
+  background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center center/cover;
   text-align: center;
-  text-shadow: 1px 1px 3px black;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #ddd;
+  margin: 10px 0 30px;
 }
 
 .whatsapp-btn {
-  background: #25d366;
+  background-color: #25D366;
   color: white;
-  padding: 0.6em 1.5em;
+  padding: 12px 25px;
+  border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-  display: inline-block;
-  margin-top: 1.5rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
 }
 
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+}
+
+/* Formulario */
 .contact-form {
-  max-width: 500px;
-  margin: 3rem auto;
-  background: #2a2a2a;
-  padding: 2rem;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #2a2a2a;
+  padding: 30px;
   border-radius: 10px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.8rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
+  padding: 12px;
   border: none;
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .contact-form button {
-  background: #28a745;
+  background-color: #4CAF50;
   color: white;
-  padding: 0.8rem 1.5rem;
+  padding: 12px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 1rem;
 }
 
-.services {
-  padding: 2rem;
-  background: #121212;
-  color: white;
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  padding: 40px 20px;
+  background-color: #111;
 }
 
 .services h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #ff4081;
-  text-shadow: 1px 1px 3px black;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ff6ec7;
 }
 
 .services ul {
-  list-style: none;
-  padding: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .services li {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #ccc;
 }
 
 .services li::before {
-  content: '✅ ';
-  margin-right: 0.5rem;
+  content: "✔️ ";
+  margin-right: 6px;
   color: #00ffcc;
 }
 
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 1.5rem;
-}
-
-.socials img {
-  width: 36px;
-  height: 36px;
-  transition: transform 0.3s ease;
-}
-
-.socials img:hover {
-  transform: scale(1.2);
-}
