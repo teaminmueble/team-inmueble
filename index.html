@@ -1,70 +1,214 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Team Inmueble</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Inmueble</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f9f9f9;
+        color: #222;
+      }
+      header {
+        text-align: center;
+        padding: 30px 15px;
+        background: white;
+      }
+      header h1 {
+        color: #00cbb2;
+        margin: 0;
+        font-size: 36px;
+      }
+      header p {
+        margin: 10px 0 0;
+        color: #666;
+      }
+      .hero {
+        background-color: #00cbb2;
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+      }
+      .hero h2 {
+        font-size: 28px;
+        margin: 0 0 20px;
+      }
+      .hero p {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+      .hero a {
+        background-color: #1fbc4c;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 20px;
+        background-color: white;
+      }
+      .gallery img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 12px;
+      }
+      .testimonios, .servicios, .contacto {
+        padding: 40px 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+      .testimonios h2, .servicios h2, .contacto h2 {
+        color: #222;
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      .testimonios p {
+        font-style: italic;
+        margin: 10px 0;
+      }
+      .servicio-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      .servicio-item img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        margin-right: 20px;
+      }
+      .servicio-item div h3 {
+        margin: 0;
+        font-size: 20px;
+        color: #00cbb2;
+      }
+      .servicio-item div p {
+        margin: 5px 0 0;
+        color: #444;
+      }
+      .contacto form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .contacto input, .contacto textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+      .contacto button {
+        background-color: #00cbb2;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .redes {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+      .redes img {
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Team Inmueble</h1>
+      <p>Luxury Real Estate in Central Florida</p>
+    </header>
 
-  <header>
-    <h1>Team Inmueble</h1>
-    <p>Luxury Real Estate in Central Florida</p>
-  </header>
+    <section class="hero">
+      <h2>¡Ven a vivir como en Hollywood!</h2>
+      <p>
+        Compra, vende o renta casas y apartamentos estilo resort, cerca de Disney y
+        los mejores colegios.
+      </p>
+      <a href="https://wa.me/14076302552" target="_blank">Escríbenos por WhatsApp</a>
+    </section>
 
-  <section class="hero">
-    <h2>✨ Ven a vivir como en Hollywood!</h2>
-    <p>Compra, vende o renta casas y apartamentos estilo resort, cerca de Disney y los mejores colegios.</p>
-    <a href="https://wa.me/17542468627" class="whatsapp-button">Escríbenos por WhatsApp</a>
-  </section>
+    <section class="gallery">
+      <img src="img1.jpg" alt="Casa moderna 1" />
+      <img src="img2.jpg" alt="Casa moderna 2" />
+    </section>
 
-  <section class="services">
-    <h2>Servicios Premium</h2>
-    <div class="service-grid">
+    <section class="testimonios">
+      <h2>Testimonios de Nuestros Clientes</h2>
+      <p>“Gracias a Team Inmueble encontré el apartamento de mis sueños en Winter Garden. ¡100% recomendados!”</p>
+      <p>“El proceso fue rápido, profesional y me ahorré dos meses de renta.”</p>
+    </section>
 
-      <div class="service-item">
-        <img src="casa-icono.png" alt="Venta de casas">
-        <h3>Compra y venta</h3>
-        <p>Asesoría completa para vender o encontrar tu propiedad ideal.</p>
+    <section class="servicios">
+      <h2>🚀 Servicios Premium</h2>
+
+      <div class="servicio-item">
+        <img src="compra.png" alt="compra" />
+        <div>
+          <h3>Compra y venta de inmuebles</h3>
+          <p>Asesoría completa para vender o encontrar la propiedad ideal.</p>
+        </div>
       </div>
 
-      <div class="service-item">
-        <img src="resort-icono.png" alt="Renta de apartamentos">
-        <h3>Renta de propiedades</h3>
-        <p>Opciones estilo resort listas para mudarse hoy.</p>
+      <div class="servicio-item">
+        <img src="renta.png" alt="renta" />
+        <div>
+          <h3>Renta de apartamentos y casas</h3>
+          <p>Opciones estilo resort, listas para mudarse hoy.</p>
+        </div>
       </div>
 
-      <div class="service-item">
-        <img src="tax-icono.png" alt="Preparación de impuestos">
-        <h3>Impuestos (Taxes)</h3>
-        <p>Servicio confiable y con experiencia local.</p>
+      <div class="servicio-item">
+        <img src="tax.png" alt="tax" />
+        <div>
+          <h3>Preparación de impuestos (Taxes)</h3>
+          <p>Servicio rápido, confiable y con experiencia local.</p>
+        </div>
       </div>
 
-      <div class="service-item">
-        <img src="seguro-icono.png" alt="Seguros">
-        <h3>Seguros</h3>
-        <p>Vida, salud y propiedades. Te protegemos.</p>
+      <div class="servicio-item">
+        <img src="seguros.png" alt="seguros" />
+        <div>
+          <h3>Seguros de vida, salud y propiedades</h3>
+          <p>Protege lo que amas con planes adaptados a ti.</p>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <form action="https://formspree.io/f/xdkdoznr" method="POST">
-    <h2>Contáctanos</h2>
-    <input type="text" name="name" placeholder="Tu nombre" required>
-    <input type="email" name="email" placeholder="Tu correo" required>
-    <textarea name="message" placeholder="Tu mensaje..." required></textarea>
-    <button type="submit">Enviar Mensaje</button>
-  </form>
-
-  <section class="socials">
-    <h3>Síguenos</h3>
-    <a href="https://www.instagram.com/teaminmueble" target="_blank"><img src="instagram.png" alt="Instagram" /></a>
-    <a href="https://www.facebook.com/profile.php?id=61557124034339" target="_blank"><img src="facebook.png" alt="Facebook" /></a>
-    <a href="https://www.tiktok.com/@teaminmueble" target="_blank"><img src="tiktok.png" alt="TikTok" /></a>
-  </section>
-
-</body>
+    <section class="contacto">
+      <h2>Contáctanos</h2>
+      <form action="https://formspree.io/f/xdkdoznr" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="email" name="email" placeholder="Correo Electrónico" required />
+        <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+      <div class="redes">
+        <a href="https://www.instagram.com/teaminmueble" target="_blank"
+          ><img src="ig.png" alt="Instagram"
+        /></a>
+        <a href="https://www.facebook.com/profile.php?id=61557124034339" target="_blank"
+          ><img src="fb.png" alt="Facebook"
+        /></a>
+        <a href="https://www.tiktok.com/@teaminmueble" target="_blank"
+          ><img src="tt.png" alt="TikTok"
+        /></a>
+      </div>
+    </section>
+  </body>
 </html>
+
 
