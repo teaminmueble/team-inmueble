@@ -2,58 +2,59 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team Inmueble</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="header">
-    <h1 class="main-title">Team Inmueble</h1>
-    <h1 class="brand-title">Team Inmueble</h1>
-  <div class="hero">
-      <h2>¡Ven a vivir como en Hollywood!</h2>
-      <p>Renta apartamentos estilo resort, cerca de los mejores colegios y con 2 meses gratis</p>
-      <a class="whatsapp-btn" href="https://wa.me/14074884340" target="_blank">Escríbenos por WhatsApp</a>
+
+  <header>
+    <h1>Team Inmueble</h1>
+    <h2>Luxury Real Estate in Central Florida</h2>
+  </header>
+
+  <section class="hero">
+    <h3>¡Ven a vivir como en Hollywood!</h3>
+    <p>Renta apartamentos estilo resort, cerca de los mejores colegios y con 2 meses gratis.</p>
+    <a class="whatsapp-button" href="https://wa.me/17542468627" target="_blank">Escríbenos por WhatsApp</a>
+  </section>
+
+  <section class="gallery">
+    <img src="https://source.unsplash.com/featured/?luxury-home" alt="Lujo 1">
+    <img src="https://source.unsplash.com/featured/?orlando-home" alt="Lujo 2">
+    <img src="https://source.unsplash.com/featured/?resort-apartment" alt="Lujo 3">
+    <img src="https://source.unsplash.com/featured/?modern-condo" alt="Lujo 4">
+  </section>
+
+  <section class="testimonials">
+    <h3>Testimonios de Nuestros Clientes</h3>
+    <div class="testimonial">“Gracias a Team Inmueble encontré el apartamento perfecto en Winter Garden. El proceso fue rápido y con un servicio impecable.” – María G.</div>
+    <div class="testimonial">“¡Todo fue lujo y comodidad! Los recomiendo a todos los que buscan vivir bien en Florida.” – Carlos R.</div>
+  </section>
+
+  <form action="https://formspree.io/f/xdkdoznr" method="POST">
+    <label for="name">Tu nombre:</label>
+    <input type="text" name="name" required>
+
+    <label for="email">Tu email:</label>
+    <input type="email" name="email" required>
+
+    <label for="message">Escribe tu mensaje:</label>
+    <textarea name="message" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://instagram.com/teaminmueble" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/teaminmueble" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://tiktok.com/@teaminmueble" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://youtube.com/@teaminmueble" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
-  </div>
+    <p>&copy; 2025 Team Inmueble. Todos los derechos reservados.</p>
+  </footer>
 
-  <div class="contact-form">
-    <form action="https://formspree.io/f/xkddoznr" method="POST">
-      <label for="name">Tu nombre:</label><br>
-      <input type="text" name="name" required><br><br>
-
-      <label for="email">Tu email:</label><br>
-      <input type="email" name="email" required><br><br>
-
-      <label for="message">Escribe tu mensaje:</label><br>
-      <textarea name="message" required></textarea><br><br>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-
-  <div class="services">
-    <h2>🚀 Nuestros Servicios</h2>
-    <ul>
-      <li>🏠 Compra y venta de inmuebles</li>
-      <li>🏢 Renta de apartamentos y casas</li>
-      <li>📄 Preparación de impuestos (Taxes)</li>
-      <li>🛡️ Seguros de vida, salud y propiedades</li>
-    </ul>
-  </div>
-
-  <div class="social-icons">
-    <a href="https://www.instagram.com/teaminmueble" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=61557124034339" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-    </a>
-    <a href="https://www.tiktok.com/@teaminmueble" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok">
-    </a>
-    <a href="https://www.youtube.com/channel/UCafaA1IRo8sIr0sKwufqKmw" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
-    </a>
-  </div>
 </body>
 </html>
