@@ -4,119 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Team Inmueble</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #ffffff;
-    }
-    header h1 {
-      font-size: 36px;
-      color: #00c7b2;
-      margin: 0;
-    }
-    header p {
-      margin-top: 10px;
-      font-size: 18px;
-    }
-    .hero {
-      text-align: center;
-      background-color: #00c7b2;
-      color: white;
-      padding: 60px 20px;
-    }
-    .hero h2 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-    .hero a {
-      background-color: #2ecc71;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      padding: 40px 20px;
-      background-color: #fff;
-    }
-    .gallery img {
-      width: 100%;
-      max-width: 480px;
-      border-radius: 8px;
-      object-fit: cover;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section h2 {
-      font-size: 28px;
-      color: #222;
-      margin-bottom: 20px;
-    }
-    .section p {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    .service {
-      background-color: #fafafa;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .service img {
-      width: 100%;
-      border-radius: 5px;
-      margin-bottom: 10px;
-    }
-    .service h3 {
-      margin: 10px 0 5px;
-      font-size: 20px;
-      color: #00c7b2;
-    }
-    .service p {
-      margin: 0;
-      font-size: 16px;
-    }
-    .contact {
-      text-align: center;
-      background-color: #eee;
-      padding: 40px 20px;
-    }
-    .contact h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    .socials {
-      margin-top: 20px;
-    }
-    .socials a img {
-      width: 40px;
-      margin: 0 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
@@ -127,92 +15,48 @@
   <section class="hero">
     <h2>¡Ven a vivir como en Hollywood!</h2>
     <p>Compra, vende o renta casas y apartamentos estilo resort, cerca de Disney y los mejores colegios.</p>
-    <a href="https://wa.me/14077902168" class="button">Escríbenos por WhatsApp</a>
+    <a href="https://wa.me/1XXXXXXXXXX" class="btn">Escríbenos por WhatsApp</a>
   </section>
 
-  <section class="section">
-    <h2>Servicios Premium</h2>
-    <div class="services">
-      <div class="service">
-        <img src="assets/venta.png" alt="Compra y venta de inmuebles">
-        <h3>Compra y Venta</h3>
-        <p>Asesoría completa para vender o encontrar la propiedad ideal.</p>
-      </div>
-      <div class="service">
-        <img src="assets/renta.png" alt="Renta de apartamentos">
-        <h3>Renta de Propiedades</h3>
-        <p>Opciones estilo resort, listas para mudarse hoy.</p>
-      </div>
-      <div class="service">
-        <img src="assets/taxes.png" alt="Preparación de impuestos">
-        <h3>Preparación de Taxes</h3>
-        <p>Servicio rápido, confiable y con experiencia local.</p>
-      </div>
-      <div class="service">
-        <img src="assets/seguros.png" alt="Seguros">
-        <h3>Seguros</h3>
-        <p>Protege lo que amas con planes adaptados a ti.</p>
-      </div>
-    </div>
-  </section>
-  <header>
-    <h1>Team Inmueble</h1>
-    <p>Luxury Real Estate in Central Florida</p>
-  </header>
-
-  <section class="hero">
-    <h2>¡Ven a vivir como en Hollywood!</h2>
-    <p>Compra, vende o renta casas y apartamentos estilo resort, cerca de Disney y los mejores colegios.</p>
-    <a href="https://wa.me/14077902168" class="button">Escríbenos por WhatsApp</a>
+  <section class="galeria">
+    <img src="assets/casa1.jpg" alt="Casa moderna 1"/>
+    <img src="assets/casa2.jpg" alt="Casa moderna 2"/>
   </section>
 
-  <section class="section">
-    <h2>Servicios Premium</h2>
-    <div class="services">
-      <div class="service">
-        <img src="assets/venta.png" alt="Compra y venta de inmuebles">
-        <h3>Compra y Venta</h3>
-        <p>Asesoría completa para vender o encontrar la propiedad ideal.</p>
-      </div>
-      <div class="service">
-        <img src="assets/renta.png" alt="Renta de apartamentos">
-        <h3>Renta de Propiedades</h3>
-        <p>Opciones estilo resort, listas para mudarse hoy.</p>
-      </div>
-      <div class="service">
-        <img src="assets/taxes.png" alt="Preparación de impuestos">
-        <h3>Preparación de Taxes</h3>
-        <p>Servicio rápido, confiable y con experiencia local.</p>
-      </div>
-      <div class="service">
-        <img src="assets/seguros.png" alt="Seguros">
-        <h3>Seguros</h3>
-        <p>Protege lo que amas con planes adaptados a ti.</p>
-      </div>
-    </div>
+  <section class="servicios">
+    <h2>🚀 Servicios Premium</h2>
+    <ul>
+      <li>🏡 Compra y venta de inmuebles</li>
+      <li>🏘️ Renta de apartamentos y casas</li>
+      <li>🧾 Preparación de impuestos (Taxes)</li>
+      <li>🛡️ Seguros de vida, salud y propiedades</li>
+    </ul>
   </section>
-  <section class="section" id="contacto">
-    <h2>Contáctanos</h2>
-    <form action="https://formspree.io/f/xdkdoznr" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu correo" required>
-      <textarea name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
-      <button type="submit">Enviar mensaje</button>
+
+  <section class="contacto">
+    <h2>📧 Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo Electrónico" required />
+      <textarea placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar Mensaje</button>
     </form>
   </section>
 
   <footer>
-    <p>Síguenos en redes sociales</p>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/teaminmueble" target="_blank"><img src="assets/instagram.svg" alt="Instagram"></a>
-      <a href="https://www.facebook.com/profile.php?id=61557124034339" target="_blank"><img src="assets/facebook.svg" alt="Facebook"></a>
-      <a href="https://www.tiktok.com/@teaminmueble" target="_blank"><img src="assets/tiktok.svg" alt="TikTok"></a>
-      <a href="https://www.youtube.com/channel/UCafaA1IRo8sIr0sKwufqKmw" target="_blank"><img src="assets/youtube.svg" alt="YouTube"></a>
-    </div>
-    <p>&copy; 2025 Team Inmueble. Todos los derechos reservados.</p>
+    <p>Síguenos:</p>
+    <a href="https://www.instagram.com/teaminmueble" target="_blank">
+      <img src="assets/instagram.svg" alt="Instagram" width="30"/>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61557124034339" target="_blank">
+      <img src="assets/facebook.svg" alt="Facebook" width="30"/>
+    </a>
+    <a href="https://www.tiktok.com/@teaminmueble" target="_blank">
+      <img src="assets/tiktok.svg" alt="TikTok" width="30"/>
+    </a>
+    <a href="https://www.youtube.com/channel/UCafaA1IRo8sIr0sKwufqKmw" target="_blank">
+      <img src="assets/youtube.svg" alt="YouTube" width="30"/>
+    </a>
   </footer>
 </body>
 </html>
-
-
-
